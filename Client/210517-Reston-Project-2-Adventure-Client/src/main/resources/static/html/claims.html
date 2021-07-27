@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/navigation_bar.css">
+    <link rel="stylesheet" href="/css/claims.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Adventure Insurance Claims</title>
+</head>
+
+<body>
+
+    <strong>Hello Amin <span><br> book </br> amin</span></strong>
+    <div class="topnav">
+        <a id="claimsNavigation" class="active" href="/html/claims.html">Claims</a>
+        <a id="plansNavigation" href="/html/plans.html">Plans</a>
+        <span class="right danger"><a id="loginNavigation" href="/html/login.html">Logout</a></span>
+        <span class="right plan" id="plan"></span>
+    </div>
+    <div>
+        <h1>Adventure Insurance Claims</h1><br>
+    </div>
+    <div class="col-container">
+        <div class="col" style="background:peru">
+            <h2>Claims</h2> <span id="count"></span>
+            <table class="col-container">
+                <thead>
+                    <th>Claim</th>
+                    <th>Amount</th>
+                    <th>Approved?</th>
+                    <th></th>
+                </thead>
+                <tbody id="claimTableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col" style="background:silver">
+            <div id="views" style="display: none">
+                <p id="currentView"></p>
+                <button type="button" id="pending">Pending</button>&nbsp;
+                <button type="button" id="completed">Completed</button>&nbsp;
+                <button type="button" id="all">All</button>
+            </div>
+            <div id="claims">
+                <label for="claim">Claim:</label>
+                <select name="claim" id="claim" type="text">
+                    <option disabled selected value>--Please select one--</option>
+                    <option value="Broken sword">Broken Sword</option>
+                    <option value="Broken rib">Broken Rib</option>
+                    <option value="Broken heart">Broken Heart</option>
+                </select>
+                <label for="amount">Amount:</label>
+                <input name="amount" id="amount" type="number" required>
+                <button id="claimButton" class="block">Submit Claim</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="/script/claims.js"></script>
+
+</html>

@@ -1,0 +1,55 @@
+.col-container {
+  margin: auto;
+  display: table;
+  width: 90%;
+}
+
+.col {
+  display: table-cell;
+  padding: 16px;
+  text-align: center;
+  width: 50%;
+}
+
+.right {
+  float: right;
+}
+
+.plan {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.danger {
+  background-color: red;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04aa6d;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 2px 10px 2px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.accept {
+  background-color: #04aa6d;
+}
+
+.deny {
+  background-color: red;
+}
